@@ -22,4 +22,6 @@ urlpatterns = [
     path('accounts/login/', auth_views.LoginView.as_view(template_name='test_muilt_pages/login.html')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('authtest/', include('authtest.urls')),
+
+    path('avalon/', include('avalon.urls')),
 ]
